@@ -1,7 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemorizerApi", "MemorizerApi\MemorizerApi.csproj", "{0313188F-B386-41C4-B86D-1DAFE826B83A}"
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memorizer.Data", "Memorizer.Data\Memorizer.Data.csproj", "{94EE88EA-1B21-477C-B627-4648A526A814}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memorizer.Core", "Memorizer.Core\Memorizer.Core.csproj", "{D56C8DEC-1C75-455E-B506-A2B8D907CAE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +12,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0313188F-B386-41C4-B86D-1DAFE826B83A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0313188F-B386-41C4-B86D-1DAFE826B83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0313188F-B386-41C4-B86D-1DAFE826B83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0313188F-B386-41C4-B86D-1DAFE826B83A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94EE88EA-1B21-477C-B627-4648A526A814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94EE88EA-1B21-477C-B627-4648A526A814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94EE88EA-1B21-477C-B627-4648A526A814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94EE88EA-1B21-477C-B627-4648A526A814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56C8DEC-1C75-455E-B506-A2B8D907CAE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56C8DEC-1C75-455E-B506-A2B8D907CAE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56C8DEC-1C75-455E-B506-A2B8D907CAE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56C8DEC-1C75-455E-B506-A2B8D907CAE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF59E6D5-B6C6-4095-82FE-9C46D6214AB3}
 	EndGlobalSection
 EndGlobal
