@@ -6,6 +6,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memorizer.Data", "Memorizer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Memorizer.Core", "Memorizer.Core\Memorizer.Core.csproj", "{D56C8DEC-1C75-455E-B506-A2B8D907CAE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{F5114909-0994-41D3-9220-F26CE2375EF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{D56C8DEC-1C75-455E-B506-A2B8D907CAE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D56C8DEC-1C75-455E-B506-A2B8D907CAE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D56C8DEC-1C75-455E-B506-A2B8D907CAE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5114909-0994-41D3-9220-F26CE2375EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5114909-0994-41D3-9220-F26CE2375EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5114909-0994-41D3-9220-F26CE2375EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5114909-0994-41D3-9220-F26CE2375EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
