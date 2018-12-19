@@ -4,4 +4,17 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\GraphQL\" />
+    <Folder Include="Query\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GraphQL" Version="2.4.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Memorizer.Data">
+      <HintPath>..\Memorizer.Data\bin\Debug\netcoreapp2.0\Memorizer.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=2.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" />
+  </ItemGroup>
 </Project>

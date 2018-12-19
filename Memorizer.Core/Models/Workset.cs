@@ -9,6 +9,6 @@ namespace Memorizer.Core.Models
         public string Name { get; set; }
         public string Description { get; set; } 
 
-        public virtual List<Question> Questions { get; set; }
+        public virtual ICollection<Question> Questions { get; set; }
     }
 }

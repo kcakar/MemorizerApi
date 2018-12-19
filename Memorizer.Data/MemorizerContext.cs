@@ -34,6 +34,14 @@ namespace Memorizer.Data
             modelBuilder.Entity<User>()
                 .Property(u=>u.DateCreated)
                 .HasComputedColumnSql("GetUtcDate()");
+
+            modelBuilder.Entity<Question>()
+                .Property(u => u.DateCreated)
+                .HasComputedColumnSql("GetUtcDate()");
+
+            modelBuilder.Entity<Workset>()
+                .Property(u => u.DateCreated)
+                .HasComputedColumnSql("GetUtcDate()");
         }
 
         public DbSet<Language> Languages { get; set; }
