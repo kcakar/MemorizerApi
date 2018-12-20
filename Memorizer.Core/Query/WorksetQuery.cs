@@ -2,6 +2,8 @@
 using Memorizer.Data;
 using Memorizer.Core.Models.GraphQL;
 using System;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Memorizer.Api.Query
 {
@@ -19,8 +21,22 @@ namespace Memorizer.Api.Query
                     context =>
                     {
                         var id = context.GetArgument<Guid?>("id");
+                        var workset = db.Worksets.Include(x => x.Questions).FirstOrDefault(i=>i.Id==id);
+                        return workset;
+                    }
+                );
 
-                        return null;
+            Field<ListGraphType<WorksetType>>(
+                "worksets",
+                resolve:
+                    context =>
+                    {
+                        var worksets = db.Worksets
+                            .Include(x => x.Questions)
+                                .ThenInclude(q => q.AnswerLanguage)
+                            .Include(x => x.Questions)
+                                .ThenInclude(q => q.QuestionLanguage);
+                        return worksets;
                     }
                 );
         }

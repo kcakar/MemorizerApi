@@ -13,7 +13,7 @@ using GraphQL.Types;
 namespace Memorizer.Api.Controllers
 {
     [Route("graphql")]
-    [Authorize]
+    //[Authorize]
     [ApiController]
     public class WorksetController : ControllerBase
     {
