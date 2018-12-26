@@ -6,6 +6,11 @@ namespace Memorizer.Core.Models
 {
     public class Workset:BaseEntry
     {
+        public Workset(User user):base(user)
+        {
+
+        }
+
         public string Name { get; set; }
         public string Description { get; set; } 
 

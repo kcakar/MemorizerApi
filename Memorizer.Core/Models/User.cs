@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Memorizer.Core.Models
 {
-    public class User:BaseEntry
+    public class User:Base
     {
         public string Name { get; set; }
         public string Surname { get; set; }

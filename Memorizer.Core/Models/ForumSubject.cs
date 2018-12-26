@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Memorizer.Core.Models
 {
-    class ForumSubject
+    class ForumSubject : Base
     {
     }
 }

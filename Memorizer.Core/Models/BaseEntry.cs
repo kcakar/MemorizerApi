@@ -4,11 +4,12 @@ using System.Text;
 
 namespace Memorizer.Core.Models
 {
-    public class BaseEntry
+    public class BaseEntry:Base
     {
-        public Guid Id { get; set; }
-        public DateTime DateCreated { get; set; }
-
+        public BaseEntry(User creator)
+        {
+            Creator = creator;
+        }
         public User Creator { get; set; }
     }
 }

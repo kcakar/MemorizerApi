@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Memorizer.Core.Models
 {
-    class Request
+    public class Request:BaseEntry
     {
+        public Request(User creator):base(creator)
+        {
+
+        }
     }
 }

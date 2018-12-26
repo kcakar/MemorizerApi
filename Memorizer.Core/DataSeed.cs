@@ -10,23 +10,25 @@ namespace Memorizer.Core
     {
         public static void Run(MemorizerContext db)
         {
+            User user = new User();
+            user.Name = "Keremcan";
+            user.Surname = "Çakar";
+            user.PictureUrl = "";
+
             if (!db.Languages.Any())
             {
                 db.Languages.Add(new Language()
                 {
-                    Id=Guid.NewGuid(),
                     Name="German"
                 });
 
                 db.Languages.Add(new Language()
                 {
-                    Id = Guid.NewGuid(),
                     Name = "Turkish"
                 });
 
                 db.Languages.Add(new Language()
                 {
-                    Id = Guid.NewGuid(),
                     Name = "English"
                 });
                 db.SaveChanges();
@@ -35,36 +37,28 @@ namespace Memorizer.Core
             if (!db.Worksets.Any())
             {
                 db.Worksets.Add(
-                new Workset()
+                new Workset(user)
                 {
-                    Id = Guid.NewGuid(),
-                    DateCreated = DateTime.Now,
                      Name="Kerem's German Workset",
                      Description="Memorize Basic German words and structures",
                      Questions= new List<Question>
                      {
-                         new Question()
+                         new Question(user)
                          {
-                             Id=Guid.NewGuid(),
-                             DateCreated=DateTime.Now,
                              QuestionText="Mädchen",
                              Answer="Girl",
                              QuestionLanguage=db.Languages.FirstOrDefault(x=>x.Name=="German"),
                              AnswerLanguage=db.Languages.FirstOrDefault(x=>x.Name=="English"),
                          },
-                         new Question()
+                         new Question(user)
                          {
-                             Id=Guid.NewGuid(),
-                             DateCreated=DateTime.Now,
                              QuestionText="Wasser",
                              Answer="Water",
                              QuestionLanguage=db.Languages.FirstOrDefault(x=>x.Name=="German"),
                              AnswerLanguage=db.Languages.FirstOrDefault(x=>x.Name=="English"),
                          },
-                         new Question()
+                         new Question(user)
                          {
-                             Id=Guid.NewGuid(),
-                             DateCreated=DateTime.Now,
                              QuestionText="Brot",
                              Answer="Bread",
                              QuestionLanguage=db.Languages.FirstOrDefault(x=>x.Name=="German"),

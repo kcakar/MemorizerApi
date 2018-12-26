@@ -6,6 +6,11 @@ namespace Memorizer.Core.Models
 {
     public class Question:BaseEntry
     {
+        public Question(User creator):base(creator)
+        {
+
+        }
+
         public string QuestionText { get; set; }
         public string Answer { get; set; }
 
